@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Ramos - O Melhor Vendedor de Carros</title>
+    <link rel="icon" type="image/svg" sizes="64x64" href="./logo.svg">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Marcos Ramos</h1>
+                
+                <div class="social-icons">
+                    <a href="https://wa.me/556699333085?text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20carros">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/marcos_pokone01/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="src/hero.png" alt="Vendedor profissional" class="hero-image" id="hero-image">
+        
+        <div class="hero-overlay"></div> <!-- overlay vermelho diagonal -->
+        <div class="hero-text">
+            <div>
+            <h2>EM RONDONÓPOLIS</h2>
+            <h1>O Melhor Negócio para Seu Carro <span style="color: #000000;">Começa Aqui</span></h1>
+            <p>Seu próximo carro está a um clique de distância.</p>
+            </div>
+
+            <div class="btn-contact-gap">
+                <a href="https://wa.me/556699333085?text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20carros" 
+                target="_blank" 
+                class="btn-contact">
+                Entrar em Contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hexagons Section -->
+    <section class="hexagons">
+        <div class="container">
+            <div class="hexagon-row">
+                <!-- Hexágono 1 -->
+                <div class="hexagon-card">
+                    <div class="hexagon">
+                        <i class="fas fa-shield-alt"></i> <!-- ícone da garantia -->
+                    </div>
+                    <h4>Garantia</h4>
+                    <p>Todos os veículos possuem garantia de fábrica, garantindo sua tranquilidade e confiança na compra.</p>
+                </div>
+
+                <!-- Hexágono 2 -->
+                <div class="hexagon-card">
+                    <div class="hexagon">
+                        <i class="fa-solid fa-droplet"></i> <!-- ícone lavagem -->
+                    </div>
+                    <h4>Lavagem</h4>
+                    <p>Antes da entrega, todos os carros passam por uma lavagem completa, deixando o veículo impecável.</p>
+                </div>
+
+                <!-- Hexágono 3 -->
+                <div class="hexagon-card">
+                    <div class="hexagon">
+                        <i class="fas fa-road"></i> <!-- ícone teste -->
+                    </div>
+                    <h4>Test Drive</h4>
+                    <p>Você pode realizar test drive em todos os veículos, garantindo a melhor escolha para suas necessidades.</p>
+                </div>
+
+                <!-- Hexágono 4 -->
+                <div class="hexagon-card">
+                    <div class="hexagon">
+                        <i class="fas fa-handshake"></i> <!-- ícone confiança -->
+                    </div>
+                    <h4>Confiança</h4>
+                    <p>O vendedor Marcos já conquistou a confiança de centenas de clientes em Rondonópolis e região.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">ALGUNS VEÍCULOS</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Produtos serão inseridos via JS -->
+            </div>
+            <div class="view-more">
+                <a href="https://pokonemultimarcas.com.br/" class="btn-red" target="_blank">VER MAIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Marquee Section -->
+    <section class="contact-marquee">
+    <div class="marquee">
+        <div class="marquee-content">
+        <span>(66) 99333085</span>
+        <span>marcossouzamarcosr@gmail.com</span>
+        <span>📍 RONDONÓPOLIS - MT</span>
+        <span>COMPRE COM O MELHOR DE RONDONÓPOLIS</span>
+        </div>
+
+        <div class="marquee-content">
+        <span>(66) 99333085</span>
+        <span>marcossouzamarcosr@gmail.com</span>
+        <span>📍 RONDONÓPOLIS - MT</span>
+        <span>SEU PRÓXIMO CARRO ESTÁ A UM CLIQUE DE DISTÂNCIA.
+        </span>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="src/marcos 2.jpg" class="about-image" alt="Marcos, vendedor profissional">
+                <div class="about-text">
+                    <h2>CONHEÇA O MARCOS RAMOS</h2>
+                    <p>Marcos começou sua carreira humilde como lavador de carros, mas sua dedicação e paixão pelo setor automotivo o levaram a se tornar um dos vendedores mais confiáveis da região. Sempre buscando oferecer o melhor atendimento, ele combina conhecimento técnico com atenção personalizada, garantindo que cada cliente saia satisfeito e confiante com sua escolha.</p>
+                    <a href="https://wa.me/556699333085?text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20carros" 
+                    target="_blank" 
+                    class="btn-red">
+                    SAIBA MAIS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-story">
+        <div class="stories-wrapper">
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story story1"><video src="src/story/1.mp4" autoplay muted loop></video></div>
+                <div class="story story2"><video src="src/story/2.mp4" autoplay muted loop></video></div>
+                <div class="story story3"><video src="src/story/3.mp4" autoplay muted loop></video></div>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="social-box">
+                <h3>Acompanhe nas redes sociais</h3>
+                <div class="story-social-icons">
+                    <a href="https://www.instagram.com/marcos_pokone01/" target="_blank" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/556699333085?text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20carros" style="background: #25D366;;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p>marcossouzamarcosr@gmail.com</p>
+                    <p> Av. Bandeirantes, 3791 - Jardim Marialva, Rondonópolis - MT, 78720-300</p>
+                </div>
+                <div class="footer-social">
+                    <a target="_blank"  href="https://wa.me/556699333085?text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20carros">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/marcos_pokone01/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2025. TODOS OS DIREITOS RESERVADOS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para gerar produtos dinamicamente e animar -->
+<script src="src/index.js"></script>
+
+</body>
+</html>
