@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     const produtos = [
         { nome: "VW/POLO Confortline ", preco: "R$95.990,00", info: "2023/2024", type:"flex", imagem: "./src/products/carro 1.jpg" },
-        { nome: "ONIX 10MT LT2", preco: "R$77.990,00", info: "2022/2023 ",type:"", imagem: "./src/products/carro 2.jpg" },
+        { nome: "Uno Attractive 1.0", preco: "R$53.9990,00", info: "2021/21 ",type:"flex", imagem: "./src/products/carro 2.jpg" },
         { nome: "HYUNDAI HB20S", preco: "R$72.990,00", info: "2016/16",type:"flex", imagem: "./src/products/carro 3.jpeg" },
         { nome: "FIAT STRADA", preco: "R$61.990,00", info: "2019/2020",type:"flex", imagem: "./src/products/carro 4.jpeg" },
         { nome: "CHEVROLET ONIX", preco: "R$75.990,00", info: "2022/2023",type:"", imagem: "./src/products/carro 5.jpeg" },
@@ -126,3 +126,4 @@ function cycleStories() {
 
 // inicia ciclo automático
 setInterval(cycleStories, 3000);
+
