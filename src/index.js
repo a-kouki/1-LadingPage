@@ -31,27 +31,15 @@ gsap.registerPlugin(ScrollTrigger);
     });
 
     //Header
-    gsap.from(".header", {
+    gsap.from("body", {
         opacity: 0,
         y: 0,
-        duration: 2,
+        duration: 4,
         ease: "power2.out",
         scrollTrigger:{
             trigger: ".header"
         }
     })
-
-    // Animação da seção Hero quando aparece
-    gsap.from(".hero", {
-        opacity: 0,
-        y: 0,
-        duration: 2,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: ".hero",
-            //start: "top 80%", // começa quando o topo da hero atingir 80% da tela
-        }
-    });
 
     // Animação dos produtos quando aparecem
     gsap.utils.toArray(".product-card").forEach(card => {
@@ -126,4 +114,5 @@ function cycleStories() {
 
 // inicia ciclo automático
 setInterval(cycleStories, 3000);
+
 
