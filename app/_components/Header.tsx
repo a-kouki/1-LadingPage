@@ -162,7 +162,8 @@ export function Header(){
                 </a>
 
                 <a
-                href="" 
+                href="https://www.whatsapp.com/catalog/556699333085/?app_absent=0&utm_source=ig" 
+                target="_blank"
                 className="font-bold border border-secondary text-secondary px-7 py-1 rounded-4xl hover:cursor-pointer hover:text-white hover:border-white hover:bg-secondary">
                 simular financiamento
                 </a>
