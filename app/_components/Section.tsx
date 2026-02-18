@@ -10,9 +10,9 @@ export function Section(){
     ]
 
     const contact = [
-        {s:"/1_1.png", p:"Fique por dentro das Promoções e Novidades!!",h:""},
+        {s:"/1_1.png", p:"Fique por dentro das Promoções e Novidades!!",h:"https://www.instagram.com/marcos_pokone01/"},
         {s:"/Instagram.svg", p:"Siga no Instagram", h:"https://www.instagram.com/marcos_pokone01/"},
-        {s:"/whatsapp.svg", p:"Me contate pelo WhatsApp", h:""},
+        {s:"/whatsapp.svg", p:"Me contate pelo WhatsApp", h:"https://www.whatsapp.com/catalog/556699333085/?app_absent=0&utm_source=ig"},
     ]
 
     const cars = [
