@@ -42,7 +42,7 @@ export function Header(){
                     <li className="hover:text-primary hover:cursor-pointer"><a href="#inicio">Início</a></li>
                     <li className="hover:text-primary hover:cursor-pointer"><a href="#veiculos">Veículos</a></li>
                     <li className="hover:text-primary hover:cursor-pointer"><a href="#mais">Mais</a></li>
-                    <li className="hover:text-primary hover:cursor-pointer"><a href="#contatos">Contacts</a></li>
+                    <li className="hover:text-primary hover:cursor-pointer"><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
 
