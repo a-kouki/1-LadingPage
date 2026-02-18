@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Grand_Hotel, Cormorant, ABeeZee, Bebas_Neue, Oswald } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,39 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const grandHotel = Grand_Hotel({
+  weight:"400",
+  variable:"--font-grand-hotel",
+  subsets:["latin"],
+
+})
+
+const cormorant = Cormorant({
+  weight:"400",
+  variable:"--font-cormorant",
+  subsets:["latin"],
+
+})
+
+const abeezee = ABeeZee({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-abeezee",
+  display: "swap",
+})
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bebas",
+})
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-oswald",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${grandHotel.variable} ${cormorant.variable} ${abeezee.variable} ${bebas.variable} ${oswald.variable} antialiased`}
       >
         {children}
       </body>
