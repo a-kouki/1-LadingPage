@@ -40,7 +40,7 @@ export function Section(){
             <div className="flex col-span-2 gap-x-2 md:gap-x-5">
                 <div className="relative w-350 h-80 ">
                 <Image 
-                src="/man.jpg"
+                src="/man.webp"
                 alt=""
                 fill
                 className="object-cover col-span-1 rounded-3xl"
