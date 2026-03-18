@@ -1,3 +1,4 @@
+import { info } from "console";
 import Image from "next/image"
 
 export function Section(){
@@ -16,22 +17,24 @@ export function Section(){
     ]
 
     const cars = [
-    { name: "VW/POLO Confortline", year: "2023/24", type:"flex", price: "R$ 95.990,00", href:"/cars/VW POLO Confortline.jpg" },
-    { name: "Uno Attractive 1.0", year: "2021", type:"flex", price: "R$ 53.999,00",href:"/cars/Uno Attractive 1.0.jpg" },
-    { name: "HYUNDAI HB20S", year: "2016", type:"flex", price: "R$ 72.990,00",href:"/cars/HYUNDAI HB20S.jpeg"},
-    { name: "FIAT STRADA", year: "2019/2020",type:"flex", price: "R$ 61.990,00",href:"/cars/FIAT STRADA.jpeg" },
-    { name: "CHEVROLET ONIX", year: "2022/2023",type:"", price: "R$ 75.990,00", href:"/cars/CHEVROLET ONIX.jpeg" },
-    { name: "CHEVROLET CORSA", year: "2009/2010",type:"", price: "R$ 32.990,00",href:"/cars/CHEVROLET CORSA.jpeg" },
+    { name: "Corolla GLI", year: "2012", info:[""], type:"1.5 Flex", price: "R$ 63.990,00", href:"/cars/Corolla GLI.jpg" },
+    { name: "JEEP/RENEGADE LONGITUDE", year: "2015/2016",info:["motor 1.8", "4x2", "Câmbio automático"], type:"", price: "R$ 69.990,00",href:"/cars/JEEP RENEGADE LONGITUDE.jpg" },
+    { name: "KWID INTENSE", year: "2022/23", type:"flex",info:["motor 1.0", "Conforto Interior", "Manual"], price: "",href:"/cars/Kwid Intense.jpg"},
+    { name: "Gol G5", year: "2009",type:"",info:["Completo", "Todo equipado"], price: "R$ 34.990,00",href:"/cars/Gol G5 Completo.jpg" },
+    { name: "", year: "",type:"",info:[], price: "",href:"/cars/sonho_realizado.jpg" },
     ];
+
+    const whatsappLink =
+    "https://api.whatsapp.com/send/?phone=556699333085&text=Ol%C3%A1%21+Vim+do+seu+site+e+gostaria+de+saber+mais+sobre+os+carros&type=phone_number&app_absent=0"
 
     return(
         <>
-        <div className="flex justify-center bg-bg-primary w-full pt-10">
+        <div className="flex justify-center bg-bg-primary w-full pt-10 text-black">
         <h2 className="flex justify-center text-4xl sm:text-5xl md:text-5xl  pb-3 font-oswald px-2">
             MARCOS SOUZA - RONDONÓPOLIS
         </h2>
         </div>
-        <div className="flex justify-center flex-row bg-bg-primary">
+        <div className="flex justify-center flex-row bg-bg-primary text-black">
         <div className="text-[13px] md:text-[19px]  grid grid-cols-1 md:grid-cols-3 gap-x-10 px-2 md:px-pxGloabl max-w-widthGlobal font-abeezee items-center">
             <div className="flex  flex-col items-start sm:items-center">
                 <p className="text-secondary text-2xl sm:text-3xl font-bebas">Vendedor de Veículos</p>
@@ -40,7 +43,7 @@ export function Section(){
             <div className="flex col-span-2 gap-x-2 md:gap-x-5">
                 <div className="relative w-350 h-80 ">
                 <Image 
-                src="/man.webp"
+                src="/man.jpg"
                 alt=""
                 fill
                 className="object-cover col-span-1 rounded-3xl"
@@ -66,7 +69,7 @@ export function Section(){
         </div>
         </div>
 
-        <div className="overflow-hidden bg-bg-primary">
+        <div className="overflow-hidden bg-bg-primary text-black">
         <div className="w-[105vw] font-grandHotel py-10 flex justify-between text-2xl md:text-3xl gap-x-5">
         {[...Array(5)].map((_, i) => (
             /*<p key={i} className={ i%2 == 0 ? "text-primary" : "text-secondary"}>
@@ -85,34 +88,102 @@ export function Section(){
         </div>
         </div>
 
-        <div className="flex justify-center bg-bg-primary" id="veiculos">
+         {/* ── DESTAQUES ───────────────────────────────────────────────── */}
+      <div className="flex justify-center bg-bg-primary text-black" id="veiculos">
         <div className="px-2 md:px-pxGloabl max-w-widthGlobal w-full">
           <h2 className="font-bebas text-5xl text-primary">Destaques</h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-6">
-            {cars.map((_,i) => (
-              <a key={i} className="flex flex-col hover:cursor-pointer" target="_blank" href="
-              https://api.whatsapp.com/send/?phone=556699333085&text=Ol%C3%A1%21+Vim+do+seu+site+e+gostaria+de+saber+mais+sobre+os+carros&type=phone_number&app_absent=0
-              ">
-                <div className="relative w-full sm:w-full h-70">
+ 
+          <div className="grid grid-cols-1 w-fit max-w-full mx-auto sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+            {cars.map((car, i) => (
+              <a
+                key={i}
+                className="group w-65 sm:w-full  flex flex-col hover:cursor-pointer rounded-3xl overflow-hidden border border-black/8 hover:border-primary/40 hover:shadow-lg transition-all duration-200 bg-white"
+                target="_blank"
+                href={whatsappLink}
+              >
+                <div className="relative w-full h-80 sm:h-90 lg:w-full lg:h-110 overflow-hidden">
                   <Image
-                    src={_.href}
-                    alt={_.name}
+                    src={car.href}
+                    alt={car.name}
                     loading="lazy"
-                    className="rounded-4xl object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   />
+                  {/* gradiente na base */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+ 
+                  {/* preço sobreposto */}
+                  <div className="absolute bottom-0 left-0 p-3 w-full">
+                    <p className="text-white font-bebas text-2xl leading-none">
+                      {car.price}
+                    </p>
+                    <p className="text-white/70 text-[11px]">{car.year}</p>
+                  </div>
                 </div>
-
-                  <p className="font-bold text-[18px]">{_.name}</p>
-                  <p>{_.year}</p>
+ 
+                {/* Info estilo post */}
+                <div className="flex flex-col gap-2 p-4 bg-white">
+ 
+                  {/* cabeçalho: avatar + vendedor + status */}
+                  <div className="flex items-center gap-2">
+                    <div className="relative w-7 h-7 rounded-full overflow-hidden flex-shrink-0 border border-black/10">
+                      <Image
+                        src="/favicon.png"
+                        alt="logo"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <span className="text-[12px] font-semibold text-black/70">
+                      Marcos Souza
+                    </span>
+                    <span className="ml-auto text-[11px] text-black/30">
+                      À venda
+                    </span>
+                  </div>
+ 
+                  {/* nome do veículo */}
+                  <p className="font-bold text-[16px] leading-tight">
+                    {car.name}
+                  </p>
+ 
+                  {/* tags de especificação */}
+                  {car.info.length > 0 && car.info[0] !== "" && (
+                    <div className="flex flex-wrap gap-1">
+                      {car.info.map((tag, j) => (
+                        <span
+                          key={j}
+                          className="text-[11px] bg-black/6 text-black/55 rounded-full px-2 py-0.5 border border-black/6"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+ 
+                  {/* CTA WhatsApp */}
+                  <div className="flex items-center justify-center gap-2 bg-[#25D366] text-white rounded-xl py-2 text-[13px] font-semibold mt-1">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 9.71 19.79 19.79 0 0 1 1.61 1.1 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    Tenho interesse
+                  </div>
+                </div>
               </a>
             ))}
           </div>
         </div>
-        </div>
+      </div>
 
-        <div className="flex justify-center pt-10 bg-bg-primary">
+        <div className="flex justify-center pt-10 bg-bg-primary text-black">
         <div className="px-2 md:px-pxGloabl max-w-widthGlobal w-full">
             <div className="flex items-center gap-5 pb-2">
             {/*<h2 className="font-grandHotel text-5xl text-secondary">Creamery</h2>*/}
