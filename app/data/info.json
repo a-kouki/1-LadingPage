@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Corolla GLI",
+    "src": "corolla-gli",
+    "year": "2012",
+    "info": [
+      "motor 1.8",
+      "Manual",
+      "Flex"
+    ],
+    "price": "R$ 63.990,00",
+    "href": "https://res.cloudinary.com/dk5w9zabw/image/upload/v1776076070/marcos-veiculos/ivuvccr66c1s2xreutwc.jpg",
+    "public_id": "marcos-veiculos/ivuvccr66c1s2xreutwc",
+    "ratio": "4x5",
+    "description": "",
+    "brand": "Toyota",
+    "category": "Híbrido",
+    "inStock": "Em Estoque"
+  },
+  {
+    "name": "JEEP/RENEGADE LONGITUDE",
+    "src": "jeep-renegade-longitude",
+    "year": "2015/16",
+    "info": [
+      "mmotor 1.8",
+      "4x2",
+      "Câmbio automático"
+    ],
+    "price": "R$ 69.990,00",
+    "href": "https://res.cloudinary.com/dk5w9zabw/image/upload/v1776076385/marcos-veiculos/cilo0vsezmimkfkkjowx.jpg",
+    "public_id": "marcos-veiculos/cilo0vsezmimkfkkjowx",
+    "ratio": "4x5",
+    "description": "",
+    "brand": "Jeep",
+    "category": "Suv",
+    "inStock": "Em Es"
+  },
+  {
+    "name": "KWID INTENSE",
+    "src": "kwid-intense",
+    "year": "2022/23",
+    "info": [
+      "motor 1.0",
+      "Conforto Interior",
+      "Manual",
+      "Flex"
+    ],
+    "price": "",
+    "href": "https://res.cloudinary.com/dk5w9zabw/image/upload/v1776076631/marcos-veiculos/eolr5dl5oqntwkzywufw.jpg",
+    "public_id": "marcos-veiculos/eolr5dl5oqntwkzywufw",
+    "ratio": "4x5",
+    "description": "",
+    "brand": "Renault",
+    "category": "",
+    "inStock": "Em Estoque"
+  },
+  {
+    "name": "Gol G5",
+    "src": "gol-g5",
+    "year": "2009",
+    "info": [],
+    "price": "R$ 34.990,00",
+    "href": "https://res.cloudinary.com/dk5w9zabw/image/upload/v1776088471/marcos-veiculos/rz3tiyqfrkhshw6qo2oa.jpg",
+    "public_id": "marcos-veiculos/rz3tiyqfrkhshw6qo2oa",
+    "ratio": "4x5",
+    "description": "Completo, Todo equipado",
+    "brand": "Volkswagen",
+    "category": "",
+    "inStock": ""
+  },
+  {
+    "name": "+1 Sonho Realizado",
+    "src": "+1-sonho-realizado",
+    "year": "",
+    "info": [],
+    "price": "",
+    "href": "",
+    "public_id": "marcos-veiculos/y4j7laogzzfuf1hioiqh",
+    "ratio": "4x5",
+    "description": "Mais um cliente satisfeito e mais um negócio fechado com sucesso !",
+    "brand": "",
+    "category": "",
+    "inStock": ""
+  },
+  {
+    "name": "teste otimização",
+    "src": "teste-otimizacao",
+    "year": "",
+    "info": [],
+    "price": "",
+    "href": "",
+    "public_id": "marcos-veiculos/n3rlrdohszzsk9um1enj",
+    "ratio": "4x5",
+    "description": "",
+    "brand": "",
+    "category": "",
+    "inStock": ""
+  }
+]
