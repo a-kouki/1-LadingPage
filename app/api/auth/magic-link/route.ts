@@ -3,6 +3,7 @@ import { magicLinkRateLimit, redis } from '@/app/utils/redis'
 import { createClient } from '@/app/utils/supabase/server'
 
 const admin_email = process.env.ADMIN_EMAIL ?? ''
+const url = process.env.NEXT_PUBLIC_BASE_URL
 
 export async function POST(req: NextRequest) {
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() ?? '127.0.0.1'
@@ -33,7 +34,7 @@ export async function POST(req: NextRequest) {
   const { error } = await supabase.auth.signInWithOtp({
     email: admin_email,
     options: {
-      emailRedirectTo: `${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/callback`,
+      emailRedirectTo: `${url}/api/auth/callback`,
     },
   })
 
